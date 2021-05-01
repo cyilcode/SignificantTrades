@@ -515,6 +515,7 @@ export default {
       'showLogos',
       'showSlippage',
       'liquidationsOnly',
+      'allLiquidations',
       'aggregateTrades',
       'preferQuoteCurrencySize',
       'thresholds',

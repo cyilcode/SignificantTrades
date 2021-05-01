@@ -155,6 +155,8 @@ export default {
             this.sfx.liquidation((amount / SIGNIFICANT_AMOUNT) * multiplier)
           }
 
+          console.log('liquidation')
+
           if (this.allLiquidations || amount >= MINIMUM_AMOUNT * multiplier) {
             let liquidationMessage = `<i class="icon-currency"></i> <strong>${formatAmount(amount, 1)}</strong>`
 
