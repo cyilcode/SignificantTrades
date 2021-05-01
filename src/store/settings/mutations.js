@@ -28,6 +28,9 @@ export default {
   TOGGLE_LOGOS(state, value) {
     state.showLogos = value ? true : false
   },
+  TOGGLE_ALL_LIQUIDATIONS(state, value) {
+    state.allLiquidations = value ? true : false
+  },
   TOGGLE_LIQUIDATIONS_ONLY(state, value) {
     state.liquidationsOnly = value ? true : false
   },

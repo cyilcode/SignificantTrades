@@ -93,6 +93,17 @@
               </label>
             </div>
 
+            <div class="form-group -tight" title="show ALL liquidation" v-tippy>
+              <label class="condensed"><small>All rip</small></label>
+              <label
+                class="checkbox-control -rip checkbox-control-input flex-right"
+                @change="$store.commit('settings/TOGGLE_ALL_LIQUIDATIONS', $event.target.checked)"
+              >
+                <input type="checkbox" class="form-control" :checked="allLiquidations" />
+                <div></div>
+              </label>
+            </div>
+
             <div class="form-group -tight" title="ONLY show liquidation" v-tippy>
               <label class="condensed"><small>Rip only</small></label>
               <label

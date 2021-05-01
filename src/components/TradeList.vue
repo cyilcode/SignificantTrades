@@ -36,6 +36,7 @@ export default {
       'thresholds',
       'exchanges',
       'useAudio',
+      'allLiquidations',
       'showSlippage',
       'liquidationsOnly',
       'audioIncludeInsignificants',
@@ -154,7 +155,7 @@ export default {
             this.sfx.liquidation((amount / SIGNIFICANT_AMOUNT) * multiplier)
           }
 
-          if (amount >= MINIMUM_AMOUNT * multiplier) {
+          if (this.allLiquidations || amount >= MINIMUM_AMOUNT * multiplier) {
             let liquidationMessage = `<i class="icon-currency"></i> <strong>${formatAmount(amount, 1)}</strong>`
 
             liquidationMessage += `&nbsp;liq<span class="min-280">uidate</span>d <strong>${
